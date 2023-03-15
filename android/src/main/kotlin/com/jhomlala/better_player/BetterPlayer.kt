@@ -136,6 +136,8 @@ internal class BetterPlayer(
         var dataSourceFactory: DataSource.Factory?
         val userAgent = getUserAgent(headers)
         if (licenseUrl != null && licenseUrl.isNotEmpty()) {
+            //TODO REMOVE
+            println("----------------- HAALLLLLOOOOOOO DRM")
             val httpMediaDrmCallback =
                 HttpMediaDrmCallback(licenseUrl, DefaultHttpDataSource.Factory())
             if (drmHeaders != null) {
